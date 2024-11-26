@@ -1,1 +1,0 @@
-<h1>Current Direction</h1>

@@ -4,20 +4,26 @@
 
 <header>
 	<div id="banner"> 
-		<div class="title">DARK DATA</div>
+		<div class="title"><a href="/">DARK DATA</a></div>
 		<div class="subtitle">FALL 2024 EDITION</div>
 	</div>
 	<nav>
 		<ul>
-		  <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-			<a href="/">EDITOR'S NOTE</a>
-		  </li>
-		  <li aria-current={$page.url.pathname.includes('/direction') ? 'page' : undefined}>
-            <a href="/direction/direction1">DIR 1</a>
-        </li>
-        <!-- <li aria-current={$page.url.pathname.includes('/direction/page2') ? 'page' : undefined}>
-            <a href="/direction/page2">DIR 2</a>
-        </li> -->
+			<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
+				<a href="/">EDITOR'S NOTE</a>
+			</li> -->
+			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+				<a href="/directions/direction1">DIRECTION 1</a>
+			</li>
+			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+				<a href="/directions/direction2">DIRECTION 2</a>
+			</li>
+			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+				<a href="/directions/direction3">DIRECTION 3</a>
+			</li>
+			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+				<a href="/directions/direction4">DIRECTION 4</a>
+			</li>
 		</ul>
 	  </nav>
 	  
@@ -41,42 +47,33 @@
 		background-color: var(--grey); 
 		padding: 2vh 0;
 	}
-
-	.title {
-		font-size: var(--title); 
-		font-weight: 700;  
-	}
-
-	.subtitle {
-		font-size: var(--subtitle); 
-		font-weight: 400; 
-	}
-
+	
 	nav {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		width: 100%; 
 	}
 
-	nav a{
+	#banner a, nav a{
 		text-decoration: none;
 		color: var(--color-text); 
 	}
 
 	ul {
-		position: relative;
-		padding: 0;
-		margin: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: var(--gap); 
-		list-style: none;
-		background-size: contain;
+		display: flex;               
+		justify-content: space-between; 
+		align-items: center;         
+		width: 100%;                 
+		padding: 0;                  
+		margin: 0;                   
+		list-style: none;            
 	}
 
 	li {
-		background: var(--grey);
-		padding: 0 calc(var(--subtitle)/2); 
+		text-align: center;          
+		background: var(--grey);     
+		padding: 0 calc(var(--subtitle) / 2); 
+		box-sizing: border-box;    
 	}
 </style>

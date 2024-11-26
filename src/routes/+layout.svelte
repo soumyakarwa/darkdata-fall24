@@ -13,7 +13,7 @@
 	</main>
 
 	<footer>
-		tbd
+		FOOTER PLACEHOLDER
 	</footer>
 </div>
 
@@ -34,7 +34,7 @@
 		width: 100%;
 		margin: 0 auto;
 		box-sizing: border-box;
-		background-color: aqua
+		/* background-color: aqua */
 	}
 
 	footer {
@@ -43,6 +43,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		background-color: red; 
+		box-sizing: border-box;
+		/* min-height: 10vh;  */
+		/* background-color: red;  */
 	}
 </style>

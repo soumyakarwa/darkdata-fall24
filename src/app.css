@@ -13,7 +13,7 @@
   --body-to-subtitle: calc(10 / 24.5);
 
   /* FONT-SIZES */
-  --title: 10vw;
+  --title: 8vw;
   --subtitle: calc(var(--title) * var(--subtitle-to-title));
   --body: calc(var(--subtitle) * var(--body-to-subtitle));
 
@@ -28,6 +28,25 @@ body {
   font-family: var(--font-body);
 }
 
+.title {
+  font-size: var(--title);
+  font-weight: 700;
+  /* line-height: 10vh;  */
+}
+
+.subtitle {
+  font-size: var(--subtitle);
+  font-weight: 400;
+}
+
+.content-title {
+  margin-bottom: var(--gap);
+}
+
+.content {
+  max-width: 80%;
+}
+
 input,
 button {
   font-size: inherit;
@@ -36,9 +55,6 @@ button {
 
 button:focus:not(:focus-visible) {
   outline: none;
-}
-
-@media (min-width: 720px) {
 }
 
 .visually-hidden {
