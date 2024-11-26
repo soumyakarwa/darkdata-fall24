@@ -19,6 +19,7 @@
 
 <style>
 	.app {
+		flex: 0.5; 
 		display: flex;
 		flex-direction: column;
 		gap: var(--gap); 
@@ -28,7 +29,7 @@
 	}
 	
 	main {
-		/* flex: 2; */
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -38,7 +39,7 @@
 	}
 
 	footer {
-		/* flex: 0.6;  */
+		flex: 0.5; 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
