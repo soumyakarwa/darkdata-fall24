@@ -19,7 +19,7 @@
 
 <style>
 	section {
-		padding: var(--gap); 
+		padding-top: var(--gap); 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;

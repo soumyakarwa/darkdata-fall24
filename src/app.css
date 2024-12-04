@@ -1,9 +1,10 @@
-@import "@fontsource/fira-mono";
-
 :root {
-  --font-body: Inter;
+  --font-body: "Garamond-Narrow";
+  --font-header: "Martin";
   --color-text: rgba(0, 0, 0, 0.7);
   --grey: rgb(217, 217, 217);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
 
   /* MARGINS */
   --gap: 2vh;
@@ -13,9 +14,12 @@
   --body-to-subtitle: calc(10 / 24.5);
 
   /* FONT-SIZES */
-  --title: 8vw;
+  --title: 12vw;
   --subtitle: calc(var(--title) * var(--subtitle-to-title));
   --body: calc(var(--subtitle) * var(--body-to-subtitle));
+
+  /* LINE HEIGHT */
+  --title-line-height: var(--title);
 
   font-family: var(--font-body);
   color: var(--color-text);
@@ -30,13 +34,15 @@ body {
 
 .title {
   font-size: var(--title);
-  font-weight: 700;
-  /* line-height: 10vh;  */
+  /* font-weight: 700; */
+  letter-spacing: 0.25rem;
+  line-height: 10vh;
 }
 
 .subtitle {
   font-size: var(--subtitle);
-  font-weight: 400;
+  /* font-weight: 400; */
+  letter-spacing: 0.1rem;
 }
 
 .content-title {
@@ -44,7 +50,7 @@ body {
 }
 
 .content {
-  max-width: 80%;
+  /* max-width: 80%; */
 }
 
 input,
@@ -67,4 +73,14 @@ button:focus:not(:focus-visible) {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+@font-face {
+  font-family: "Martin";
+  src: url("./lib/fonts/MARTIN-Regular.otf");
+}
+
+@font-face {
+  font-family: "Garamond-Narrow";
+  src: url("./lib/fonts/itc-garamond-std-book-narrow.otf");
 }

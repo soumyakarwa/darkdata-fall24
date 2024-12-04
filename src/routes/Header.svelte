@@ -9,9 +9,6 @@
 	</div>
 	<nav>
 		<ul>
-			<!-- <li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">EDITOR'S NOTE</a>
-			</li> -->
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
 				<a href="/directions/direction1">DIRECTION 1</a>
 			</li>
@@ -31,6 +28,7 @@
 
 <style>
 	header {
+		font-family: var(--font-header);
 		display: flex;
 		flex-direction: column; 
 		justify-content: center;
@@ -44,8 +42,9 @@
 		flex-direction: column;
 		text-align: center;
 		width: 100%; 
-		background-color: var(--grey); 
+		background-color: var(--black); 
 		padding: 2vh 0;
+		color: var(--white);
 	}
 	
 	nav {
@@ -57,7 +56,7 @@
 
 	#banner a, nav a{
 		text-decoration: none;
-		color: var(--color-text); 
+		color: var(--white); 
 	}
 
 	ul {
