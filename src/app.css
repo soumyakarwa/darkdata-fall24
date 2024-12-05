@@ -1,7 +1,6 @@
 :root {
   --font-body: "Garamond-Narrow";
   --font-header: "Martin";
-  --color-text: rgba(0, 0, 0, 0.7);
   --grey: rgb(217, 217, 217);
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
@@ -12,12 +11,12 @@
   --app-margins: 10vh 20vw;
 
   /* RATIOS */
-  --subtitle-to-title: calc(23 / 70);
+  --subtitle-to-title: calc(21.5 / 70);
   --nav-to-subtitle: calc(12 / 22.5);
   --body-to-subtitle: calc(8 / 22.5);
 
   /* FONT-SIZES */
-  --title: 12vw;
+  --title: 13vw;
   --subtitle: calc(var(--title) * var(--subtitle-to-title));
   --nav: calc(var(--subtitle) * var(--nav-to-subtitle));
   --body: calc(var(--subtitle) * var(--body-to-subtitle));
@@ -92,11 +91,11 @@ button:focus:not(:focus-visible) {
 
 @media screen and (max-width: 480px) {
   :root {
-    --gap: 0.5vh;
+    --gap: 1vh;
     --app-width: 80vw;
     --app-margins: 5vh 10vw;
     --title: 18vw;
-    --body-to-subtitle: 12 / 22.5;
-    --nav-to-subtitle: 14 / 22.5;
+    --body-to-subtitle: 17 / 22.5;
+    --nav-to-subtitle: 20 / 22.5;
   }
 }

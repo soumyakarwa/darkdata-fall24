@@ -1,11 +1,10 @@
 <script>
+    export let data; 
 </script>
 
 <section>
-    <div>ARTICLE 1</div>
-    <div>ARTICLE 2</div>
-    <div>ARTICLE 3</div>
-    <div>ARTICLE 4</div>
+    <div>{data.article.title}</div>
+    <div>{data.article.content}</div>
 </section>
 
 <style>

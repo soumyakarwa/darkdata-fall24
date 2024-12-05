@@ -1,0 +1,189 @@
+{
+  "zine": {
+    "name": "Dark Data",
+    "issue": "Fall 2024",
+    "publication_date": "2024-12-07",
+    "articles": [
+      {
+        "id": "viviane-ma-title-tba",
+        "category": "Surveillance & The Media",
+        "title": "tba",
+        "author": {
+          "name": "Viviane Ma",
+          "email": "may770@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "nathan-williams-title-tba",
+        "category": "Surveillance & The Media",
+        "title": "title tba",
+        "author": {
+          "name": "Nathan Williams",
+          "email": "willr520@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "fatima-ashraf-title-tba",
+        "category": "Surveillance & The Media",
+        "title": "title tba",
+        "author": {
+          "name": "Fatima Ashraf",
+          "email": "ashrf576@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "neven-armanios-rodriguez-title-tba",
+        "category": "Digital Misogyny",
+        "title": "title tba",
+        "author": {
+          "name": "Neven Armanios-Rodriguez",
+          "email": "ashrf576@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "xiangying-fang-title-tba",
+        "category": "Digital Misogyny",
+        "title": "title tba",
+        "author": {
+          "name": "Xiangying Fang",
+          "email": "fangx339@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "amy-lewis-title-tba",
+        "category": "Digital Misogyny",
+        "title": "title tba",
+        "author": {
+          "name": "Amy Lewis",
+          "email": "lewia046@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "nick-lyons-title-tba",
+        "category": "Hidden Narratives",
+        "title": "title tba",
+        "author": {
+          "name": "Nick Lyons",
+          "email": "lyonn670@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "katya-danziger-title-tba",
+        "category": "Hidden Narratives",
+        "title": "title tba",
+        "author": {
+          "name": "Katya Danziger",
+          "email": "danzk958@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      },
+      {
+        "id": "anon-title-tba",
+        "category": "Hidden Narratives",
+        "title": "title tba",
+        "author": {
+          "name": "Anonymous",
+          "email": "anon@newschool.edu",
+          "bio": ""
+        },
+        "content": {
+          "body": "tba",
+          "images": [
+            {
+              "url": "https://example.com/image1.jpg",
+              "caption": "An illustrative image",
+              "alt_text": "Image showing zine artwork"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

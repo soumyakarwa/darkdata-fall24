@@ -4,7 +4,14 @@
 
 <header>
 	<div id="banner"> 
-		<div class="title"><a href="/">DARK DATA</a></div>
+		<a href="/">
+		<div class="title">	
+			<div id="title-pt-1">DARK</div>
+			<div id="title-icon"><img id="header-image" src="./src/lib/images/Favicon_Large.png" alt="Dark Data Icon" /></div>
+			<div id="title-pt-2">DATA</div>
+		</div>
+		</a>
+		
 		<div class="subtitle">
 			<div id="volume">VOLUME SIX</div>
 			<div id="theme">"THEME OR TAGLINE"</div>
@@ -14,13 +21,13 @@
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction1">DIGITAL MISOGYNY</a>
+				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
 			</li>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction2">SURVEILLANCE & THE MEDIA</a>
+				<a href="/directions/surveillance-and-the-media">SURVEILLANCE & THE MEDIA</a>
 			</li>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction3">HIDDEN NARRATIVES</a>
+				<a href="/directions/hidden-narratives">HIDDEN NARRATIVES</a>
 			</li>
 		</ul>
 	  </nav>
@@ -82,10 +89,28 @@
 	}
 
 	.title {
+		display: flex; 
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: center;
+		/* padding: 0 var(--subtitle-padding) 0 var(--subtitle-padding);  */
+		gap: var(--gap); 
+		height: auto; 
+	}
+
+	#title-pt-1, #title-pt-2 {
 		font-size: var(--title);
 		letter-spacing: var(--title-letter-spacing);
 		line-height: var(--line-height);
 	}
+
+	.title #header-image{
+		width: calc(var(--title)/1); 
+		height: calc(var(--title)/1.5); 
+		display: inline-block;
+		/* padding-top: calc(var(--title)/1.5); */
+	}
+
 
 	.subtitle {
 		font-size: var(--subtitle);
