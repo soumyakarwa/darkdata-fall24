@@ -95,5 +95,8 @@ button:focus:not(:focus-visible) {
     --gap: 0.5vh;
     --app-width: 80vw;
     --app-margins: 5vh 10vw;
+    --title: 18vw;
+    --body-to-subtitle: 12 / 22.5;
+    --nav-to-subtitle: 14 / 22.5;
   }
 }
