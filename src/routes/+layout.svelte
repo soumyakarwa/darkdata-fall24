@@ -24,8 +24,8 @@
 		flex-direction: column;
 		gap: var(--gap); 
 		min-height: 80vh;
-		max-width: 60vw; 
-		margin: 10vh 20vw;  
+		max-width: var(--app-width); 
+		margin: var(--app-margins);  
 	}
 	
 	main {

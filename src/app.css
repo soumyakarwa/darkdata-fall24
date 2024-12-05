@@ -6,8 +6,10 @@
   --black: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
 
-  /* MARGINS */
+  /* MARGINS & WIDTHS*/
   --gap: 2vh;
+  --app-width: 60vw;
+  --app-margins: 10vh 20vw;
 
   /* RATIOS */
   --subtitle-to-title: calc(23 / 70);
@@ -91,5 +93,7 @@ button:focus:not(:focus-visible) {
 @media screen and (max-width: 480px) {
   :root {
     --gap: 0.5vh;
+    --app-width: 80vw;
+    --app-margins: 5vh 10vw;
   }
 }
