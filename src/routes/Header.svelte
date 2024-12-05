@@ -5,21 +5,22 @@
 <header>
 	<div id="banner"> 
 		<div class="title"><a href="/">DARK DATA</a></div>
-		<div class="subtitle">FALL 2024 EDITION</div>
+		<div class="subtitle">
+			<div id="volume">VOLUME SIX</div>
+			<div id="theme">"THEME OR TAGLINE"</div>
+			<div id="edition">FALL 2024</div>
+		</div>
 	</div>
 	<nav>
 		<ul>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction1">DIRECTION 1</a>
+				<a href="/directions/direction1">DIGITAL MISOGYNY</a>
 			</li>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction2">DIRECTION 2</a>
+				<a href="/directions/direction2">SURVEILLANCE & THE MEDIA</a>
 			</li>
 			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction3">DIRECTION 3</a>
-			</li>
-			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
-				<a href="/directions/direction4">DIRECTION 4</a>
+				<a href="/directions/direction3">HIDDEN NARRATIVES</a>
 			</li>
 		</ul>
 	  </nav>
@@ -43,8 +44,9 @@
 		text-align: center;
 		width: 100%; 
 		background-color: var(--black); 
-		padding: 2vh 0;
-		color: var(--white);
+		padding: var(--banner-margins) 0;
+    	color: var(--white);
+    	gap: var(--title-subtitle-gap);
 	}
 	
 	nav {
@@ -71,8 +73,32 @@
 
 	li {
 		text-align: center;          
-		background: var(--grey);     
-		padding: 0 calc(var(--subtitle) / 2); 
+		background: var(--black);    
+		font-size: var(--nav);
+		letter-spacing: var(--body-letter-spacing); 
+		line-height: var(--line-height); 
+		padding:  var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding); 
 		box-sizing: border-box;    
 	}
+
+	.title {
+		font-size: var(--title);
+		letter-spacing: var(--title-letter-spacing);
+		line-height: var(--line-height);
+	}
+
+	.subtitle {
+		font-size: var(--subtitle);
+		letter-spacing: var(--subtitle-letter-spacing);
+		line-height: var(--line-height);
+		background-color: var(--white); 
+		color: var(--black); 
+		margin: 0 var(--banner-margins);
+		padding: 0 var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding); 
+		display: flex; 
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 </style>
