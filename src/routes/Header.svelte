@@ -1,5 +1,6 @@
 <script>
 	import { page } from '$app/stores';
+	import headerImage from "$lib/images/Favicon_Large.png";
 </script>
 
 <header>
@@ -7,7 +8,7 @@
 		<a href="/">
 		<div class="title">	
 			<div id="title-pt-1">DARK</div>
-			<div id="title-icon"><img id="header-image" src="./src/lib/images/Favicon_Large.png" alt="Dark Data Icon" /></div>
+			<div id="title-icon"><img id="header-image" src={headerImage} alt="Dark Data Icon" /></div>
 			<div id="title-pt-2">DATA</div>
 		</div>
 		</a>
