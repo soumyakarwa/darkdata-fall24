@@ -5,20 +5,20 @@
 <header>
 	<div id="banner"> 
 		<a href="/">
-		<div class="title">	
+		<div class="title grain-filter">	
 			<div id="title-pt-1">DARK</div>
 			<div id="title-icon"><img id="header-image" src="/Favicon_Large.png" alt="Dark Data Icon" /></div>
 			<div id="title-pt-2">DATA</div>
 		</div>
 		</a>
 		
-		<div class="subtitle">
+		<div class="subtitle grain-filter">
 			<div id="volume">VOLUME SIX</div>
 			<div id="theme">UNMASKING TECH'S VEIL</div>
 			<div id="edition">FALL 2024</div>
 		</div>
 	</div>
-	<nav>
+	<nav class="grain-filter">
 		<ul>
 			<li id="nav-digital-misogyny" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
 				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
@@ -125,5 +125,4 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-
 </style>

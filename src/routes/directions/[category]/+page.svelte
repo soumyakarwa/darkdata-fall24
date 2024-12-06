@@ -34,9 +34,9 @@
     </button>
 
     <div id="article-title-content">
-      <div id="article-title">{articleData.title}</div>
+      <div id="article-title ">{articleData.title}</div>
       <div class="ellipse-bullet"></div>
-      <div id="article-author">{articleData.author.name}</div>
+      <div id="article-author grain-filter">{articleData.author.name}</div>
     </div>
 
     <button on:click={nextArticle} aria-label="Next Article" class="carousel-button">

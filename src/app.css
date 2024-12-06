@@ -37,6 +37,9 @@
   --title-subtitle-gap: calc(var(--banner-margins) * 2);
   --subtitle-padding: calc(var(--banner-margins) / 2);
 
+  /* MISC */
+  --scale: 0.6;
+
   font-family: var(--font-body);
   color: var(--color-text);
 }
@@ -55,6 +58,10 @@ body {
 
 .content {
   /* max-width: 80%; */
+}
+
+.grain-filter {
+  filter: url(#grainy-text-high);
 }
 
 a {
@@ -133,5 +140,9 @@ button:focus:not(:focus-visible) {
     --title: 18vw;
     --body-to-subtitle: 17 / 22.5;
     --nav-to-subtitle: 20 / 22.5;
+  }
+
+  .grain-filter {
+    filter: url(#grainy-text-low);
   }
 }
