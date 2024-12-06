@@ -128,8 +128,8 @@ button:focus:not(:focus-visible) {
 @media screen and (max-width: 480px) {
   :root {
     --gap: 1vh;
-    --app-width: 80vw;
-    --app-margins: 5vh 10vw;
+    --app-width: 90vw;
+    --app-margins: 2.5vh 5vw;
     --title: 18vw;
     --body-to-subtitle: 17 / 22.5;
     --nav-to-subtitle: 20 / 22.5;
