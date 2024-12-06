@@ -1,9 +1,16 @@
 <script>
 	import { page } from '$app/stores';
+	let activeNavId = ''; // Variable to store the active item's id
+
+	function handleNavClick(id) {
+		activeNavId = id;
+	}
 </script>
 
 <header>
-	<div id="banner"> 
+	<div id="banner" 
+		class:active={activeNavId === ''}
+		on:click={() => handleNavClick('')}> 
 		<a href="/">
 		<div class="title grain-filter">	
 			<div id="title-pt-1">DARK</div>
@@ -20,13 +27,26 @@
 	</div>
 	<nav class="grain-filter">
 		<ul>
-			<li id="nav-digital-misogyny" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<li 
+				id="nav-digital-misogyny" 
+				aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}
+				class:active={activeNavId === 'nav-digital-misogyny'}
+				on:click={() => handleNavClick('nav-digital-misogyny')}>
 				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
 			</li>
-			<li id="nav-surveillance" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<li 
+				id="nav-surveillance"
+				class:active={activeNavId === 'nav-surveillance'}
+				aria-current={$page.url.pathname.includes('/directions/surveillance-and-the-media') ? 'page' : undefined}
+				on:click={() => handleNavClick('nav-surveillance')}>
 				<a href="/directions/surveillance-and-the-media">SURVEILLANCE & THE MEDIA</a>
 			</li>
-			<li id="nav-hidden-narratives" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<li 
+				id="nav-hidden-narratives"
+				class:active={activeNavId === 'nav-hidden-narratives'}
+				aria-current={$page.url.pathname.includes('/directions/hidden-narratives') ? 'page' : undefined}
+				on:click={() => handleNavClick('nav-hidden-narratives')}>
 				<a href="/directions/hidden-narratives">HIDDEN NARRATIVES</a>
 			</li>
 		</ul>
@@ -86,6 +106,17 @@
 		line-height: var(--line-height); 
 		padding:  var(--subtitle-padding); 
 		box-sizing: border-box;    
+	}
+
+	li:hover{
+		background-color: var(--red); 
+	}
+
+	nav ul li.active {
+		background-color: var(--red); 
+	/* color: white;
+	font-weight: bold;
+	border: 1px solid white; */
 	}
 
 	.title {

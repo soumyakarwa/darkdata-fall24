@@ -5,29 +5,31 @@
 	let { children } = $props();
 </script>
 
-<div class="app">
-	<Header />
+<!-- <section id="darkdata" class="grain-filter"> -->
+	<div class="app">
+		<Header />
 
-	<main>
-		{@render children()}
-	</main>
+		<main>
+			{@render children()}
+		</main>
 
-	<footer>
-		FOOTER PLACEHOLDER
-	</footer>
-	<svg width="0" height="0">
-		<filter id="grainy-text-high">
-		  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" />
-		  <feDisplacementMap in="SourceGraphic" scale=4 />
-		</filter>
-	</svg>
-	<svg width="0" height="0">
-		<filter id="grainy-text-low">
-		  <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" />
-		  <feDisplacementMap in="SourceGraphic" scale=2 />
-		</filter>
-	</svg>
-</div>
+		<footer>
+			FOOTER PLACEHOLDER
+		</footer>
+		<svg width="0" height="0">
+			<filter id="grainy-text-high">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" />
+			<feDisplacementMap in="SourceGraphic" scale=4 />
+			</filter>
+		</svg>
+		<svg width="0" height="0">
+			<filter id="grainy-text-low">
+			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" />
+			<feDisplacementMap in="SourceGraphic" scale=2 />
+			</filter>
+		</svg>
+	</div>
+<!-- </section> -->
 
 <style>
 	.app {
@@ -40,6 +42,10 @@
 		margin: var(--app-margins);  
 	}
 	
+	/* #darkdata{
+		background-color: var(--black);
+	} */
+
 	main {
 		flex: 1;
 		display: flex;
