@@ -3,31 +3,29 @@
   import ArticleContent from './[id]/+page.svelte'; // Import the component
 
   let currentArticleIndex = 0;
-  let articleData = data.category.articles[currentArticleIndex];  
+  let articleData = data.category.articles[currentArticleIndex];
+  let animationClass = ''; // Animation class for swishing
 
-  $: {
-    articleData = data.category.articles[currentArticleIndex];
-  }
+  $: articleData = data.category.articles[currentArticleIndex]; // Update articleData reactively
 
-  // Function to move to the next article
   function nextArticle() {
-    if (currentArticleIndex < data.category.articles.length - 1) {
-      currentArticleIndex++;
-    } else {
-      currentArticleIndex = 0; // Loop back to the first article
-    }
-    console.log(currentArticleIndex); 
+    animationClass = 'swish-exit';
+    setTimeout(() => {
+      currentArticleIndex = (currentArticleIndex + 1) % data.category.articles.length;
+      animationClass = 'swish-enter';
+    }, 500); // Match the duration of the animation
   }
 
-  // Function to move to the previous article (optional)
   function prevArticle() {
-    if (currentArticleIndex > 0) {
-      currentArticleIndex--;
-    } else {
-      currentArticleIndex = data.category.articles.length - 1; // Loop to the last article
-    }
+    animationClass = 'swish-exit';
+    setTimeout(() => {
+      currentArticleIndex =
+        (currentArticleIndex - 1 + data.category.articles.length) % data.category.articles.length;
+      animationClass = 'swish-enter';
+    }, 500); // Match the duration of the animation
   }
 </script>
+
 
 <section>
   <div id="article-nav">
@@ -46,56 +44,55 @@
     </button>
   </div>
 
-  {#if articleData}
+  <div class="{animationClass}">
     <ArticleContent articleData={articleData} />
-  {/if}
+  </div>
 </section>
 
+
 <style>
-    section {
-        /* padding: var(--gap);  */
-        display: flex; 
-        flex-direction: column; 
-        justify-content: center;
-        align-items: center;
-        gap: var(--gap); 
-        font-family: var(--font-header)
-    }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    font-family: var(--font-header);
+  }
 
-    .carousel-button{
-      background: none;
-      color: var(--white); 
-      border: none;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      padding: calc(var(--gap)/2); 
-    }
+  .carousel-button {
+    background: none;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--gap)/2);
+  }
 
-    #article-nav{
-      display: flex; 
-      flex-direction: row; 
-      align-items: center;
-      padding: var(--subtitle-padding) 0; 
-      width: 100%; 
-      background-color: var(--black); 
-      color: var(--white); 
-      font-size: var(--nav); 
-    }
+  #article-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--subtitle-padding) 0;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--nav);
+  }
 
-    #article-title-content {
-      margin: auto;
-      display: flex; 
-      flex-direction: row; 
-      align-items: center; 
-      gap: calc(var(--gap)/2); 
-    }
+  #article-title-content {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(var(--gap)/2);
+  }
 
-    .ellipse-bullet {
-      width: calc(var(--nav)/4);          
-      height: calc(var(--nav)/4);         
-      background-color: var(--white); 
-      border-radius: 50%;    
-    }
-
+  .ellipse-bullet {
+    width: calc(var(--nav)/4);
+    height: calc(var(--nav)/4);
+    background-color: var(--white);
+    border-radius: 50%;
+  }
 </style>

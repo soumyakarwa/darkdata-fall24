@@ -1,10 +1,5 @@
 <script>
     export let articleData;
-
-    $: {
-        // { id, title, author, content } = articleData;
-        console.log('Received articleData in ArticleContent:', articleData);
-    }
 </script>
 
 <section>

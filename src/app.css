@@ -83,6 +83,38 @@ button:focus:not(:focus-visible) {
   white-space: nowrap;
 }
 
+/* Swish animation for entering content */
+@keyframes swish-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Swish animation for exiting content */
+@keyframes swish-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.swish-enter {
+  animation: swish-in 0.5s ease forwards;
+}
+
+.swish-exit {
+  animation: swish-out 0.5s ease forwards;
+}
+
 @font-face {
   font-family: "Martin";
   src: url("./lib/fonts/MARTIN-Regular.otf");
