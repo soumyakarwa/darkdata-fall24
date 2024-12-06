@@ -1,18 +1,25 @@
 <script>
-    export let data;
-  </script>
-  
-  <article>
-    <h1>{data.article.title}</h1>
-    <p>By {data.article.author.name}</p>
-    <div>{data.article.content.body}</div>
-  </article>
-  
-  <style>
-    article {
-      padding: 1rem;
-      max-width: 800px;
-      margin: 0 auto;
+    export let articleData;
+
+    $: {
+        // { id, title, author, content } = articleData;
+        console.log('Received articleData in ArticleContent:', articleData);
     }
-  </style>
-  
+</script>
+
+<section>
+    <div>
+        {#if articleData.content.images && articleData.content.images.length > 0}
+            {#each articleData.content.images as image}
+                <img class="article-img" src={image.url} alt={image.description || 'Article Image'} />
+            {/each}
+        {/if}
+        <p>{articleData.content.body}</p>
+    </div>
+</section>
+
+<style>
+    .article-img{
+      width: 100%; 
+    }
+</style>

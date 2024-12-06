@@ -1,47 +1,54 @@
 <script>
-    export let data;
-    import { onMount } from 'svelte';
-    
-    $: {
-      if (data) {
-        console.log(data.category);
-      }
+  export let data;
+  import ArticleContent from './[id]/+page.svelte'; // Import the component
+
+  let currentArticleIndex = 0;
+  let articleData = data.category.articles[currentArticleIndex];  
+
+  $: {
+    articleData = data.category.articles[currentArticleIndex];
+  }
+
+  // Function to move to the next article
+  function nextArticle() {
+    if (currentArticleIndex < data.category.articles.length - 1) {
+      currentArticleIndex++;
+    } else {
+      currentArticleIndex = 0; // Loop back to the first article
     }
+    console.log(currentArticleIndex); 
+  }
 
-
-    // const currArticle = data.category.articles[0]; 
-    // console.log(currArticle.content.images[0].url); 
+  // Function to move to the previous article (optional)
+  function prevArticle() {
+    if (currentArticleIndex > 0) {
+      currentArticleIndex--;
+    } else {
+      currentArticleIndex = data.category.articles.length - 1; // Loop to the last article
+    }
+  }
 </script>
-  
+
 <section>
   <div id="article-nav">
+    <button on:click={prevArticle} aria-label="Previous Article" class="carousel-button">
+      <span class="material-icons">arrow_back</span>
+    </button>
+
     <div id="article-title-content">
-      <div id="article-title">{data.category.articles[0].title}</div> 
+      <div id="article-title">{articleData.title}</div>
       <div class="ellipse-bullet"></div>
-      <div id="article-author">{data.category.articles[0].author.name}</div> 
+      <div id="article-author">{articleData.author.name}</div>
     </div>
-    <span id="title-arrow" class="material-icons">
-      arrow_forward
-     </span>
+
+    <button on:click={nextArticle} aria-label="Next Article" class="carousel-button">
+      <span class="material-icons">arrow_forward</span>
+    </button>
   </div>
- 
-  <!--
-  Below the article title, there is an article image and article content. 
-  On the right of the article title there should be an arrow. When the user clicks on the arrow, a carousel effect should shift the content and image (below the title) to the next one. These articles should exist on their own url. For instance, when the page loads "directions/digital-misogyny/article-1" then the user clicks on the arrow, the header, navbar and article title div remain in place and then article image and content, with a carousel effect,slides onto the next article. The path changes to "directions/digital/misogyny"
-  -->
 
-
-
-  <!-- <img id="article-title-img" src={currArticle.content.images[0].url} alt={currArticle.content.images[0].alt_text} />
-  <ul>
-    {#each data.category.articles as article}
-      <li>
-        <a href={`/directions/${data.category.id}/${article.id}`}>
-          {article.title} - By {article.author.name}
-        </a>
-      </li>
-    {/each}
-  </ul> -->
+  {#if articleData}
+    <ArticleContent articleData={articleData} />
+  {/if}
 </section>
 
 <style>
@@ -53,6 +60,16 @@
         align-items: center;
         gap: var(--gap); 
         font-family: var(--font-header)
+    }
+
+    .carousel-button{
+      background: none;
+      color: var(--white); 
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: calc(var(--gap)/2); 
     }
 
     #article-nav{
@@ -79,19 +96,6 @@
       height: calc(var(--nav)/4);         
       background-color: var(--white); 
       border-radius: 50%;    
-      /* display: inline-block;  */
-      /* transform: translateY(calc(var(--nav)/10)); */
-    }
-    
-    #article-title-img{
-      width: 100%; 
-    }
-
-    #title-arrow {
-      font-size: var(--nav); 
-      color: var(--white); 
-      margin-right: calc(var(--gap)/2); 
-      /* transform: translateY(var(--nav)/2); */
     }
 
 </style>
