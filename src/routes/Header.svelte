@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-	import headerImage from "$lib/images/Favicon_Large.png";
 </script>
 
 <header>
@@ -8,26 +7,26 @@
 		<a href="/">
 		<div class="title">	
 			<div id="title-pt-1">DARK</div>
-			<div id="title-icon"><img id="header-image" src={headerImage} alt="Dark Data Icon" /></div>
+			<div id="title-icon"><img id="header-image" src="/Favicon_Large.png" alt="Dark Data Icon" /></div>
 			<div id="title-pt-2">DATA</div>
 		</div>
 		</a>
 		
 		<div class="subtitle">
 			<div id="volume">VOLUME SIX</div>
-			<div id="theme">"THEME OR TAGLINE"</div>
+			<div id="theme">UNMASKING TECH'S VEIL</div>
 			<div id="edition">FALL 2024</div>
 		</div>
 	</div>
 	<nav>
 		<ul>
-			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<li id="nav-digital-misogyny" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
 				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
 			</li>
-			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<li id="nav-surveillance" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
 				<a href="/directions/surveillance-and-the-media">SURVEILLANCE & THE MEDIA</a>
 			</li>
-			<li aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
+			<li id="nav-hidden-narratives" aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}>
 				<a href="/directions/hidden-narratives">HIDDEN NARRATIVES</a>
 			</li>
 		</ul>
@@ -85,7 +84,7 @@
 		font-size: var(--nav);
 		letter-spacing: var(--body-letter-spacing); 
 		line-height: var(--line-height); 
-		padding:  var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding); 
+		padding:  var(--subtitle-padding); 
 		box-sizing: border-box;    
 	}
 

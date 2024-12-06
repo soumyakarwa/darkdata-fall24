@@ -7,8 +7,8 @@
 
   /* MARGINS & WIDTHS*/
   --gap: 2vh;
-  --app-width: 60vw;
-  --app-margins: 10vh 20vw;
+  --app-width: 70vw;
+  --app-margins: 5vh 15vw;
 
   /* RATIOS */
   --subtitle-to-title: calc(21.5 / 70);
@@ -55,6 +55,10 @@ body {
 
 .content {
   /* max-width: 80%; */
+}
+
+a {
+  text-decoration: none;
 }
 
 input,

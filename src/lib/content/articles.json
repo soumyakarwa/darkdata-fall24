@@ -10,7 +10,7 @@
         "articles": [
           {
             "id": "neven-armanios-rodriguez-title-tbd",
-            "title": "Title TBA",
+            "title": "Neven Title TBA",
             "author": {
               "name": "Neven Armanios-Rodriguez",
               "email": "ashrf576@newschool.edu",
@@ -20,7 +20,7 @@
               "body": "tba",
               "images": [
                 {
-                  "url": "https://example.com/image1.jpg",
+                  "url": "/images/NEVEN_FINAL.png",
                   "caption": "An illustrative image",
                   "alt_text": "Image showing zine artwork"
                 }
@@ -29,7 +29,7 @@
           },
           {
             "id": "xiangying-fang-title-tba",
-            "title": "title tba",
+            "title": "XIANGYING Title TBA",
             "author": {
               "name": "Xiangying Fang",
               "email": "fangx339@newschool.edu",
@@ -48,7 +48,7 @@
           },
           {
             "id": "amy-lewis-title-tba",
-            "title": "title tba",
+            "title": "Amy Title TBA",
             "author": {
               "name": "Amy Lewis",
               "email": "lewia046@newschool.edu",
@@ -58,7 +58,7 @@
               "body": "tba",
               "images": [
                 {
-                  "url": "https://example.com/image1.jpg",
+                  "url": "/images/AMY_FINAL.png",
                   "caption": "An illustrative image",
                   "alt_text": "Image showing zine artwork"
                 }
@@ -74,7 +74,7 @@
           {
             "id": "viviane-ma-title-tba",
             "category": "Surveillance & The Media",
-            "title": "tba",
+            "title": "Viviane Title TBA",
             "author": {
               "name": "Viviane Ma",
               "email": "may770@newschool.edu",
@@ -84,7 +84,7 @@
               "body": "tba",
               "images": [
                 {
-                  "url": "https://example.com/image1.jpg",
+                  "url": "/images/VIVIANE_FINAL.png",
                   "caption": "An illustrative image",
                   "alt_text": "Image showing zine artwork"
                 }
@@ -94,7 +94,7 @@
           {
             "id": "nathan-williams-title-tba",
             "category": "Surveillance & The Media",
-            "title": "title tba",
+            "title": "Nathan Title TBA",
             "author": {
               "name": "Nathan Williams",
               "email": "willr520@newschool.edu",
@@ -104,7 +104,7 @@
               "body": "tba",
               "images": [
                 {
-                  "url": "https://example.com/image1.jpg",
+                  "url": "/images/NATHAN_FINAL.png",
                   "caption": "An illustrative image",
                   "alt_text": "Image showing zine artwork"
                 }
@@ -114,7 +114,7 @@
           {
             "id": "fatima-ashraf-title-tba",
             "category": "Surveillance & The Media",
-            "title": "title tba",
+            "title": "Fatima Title TBA",
             "author": {
               "name": "Fatima Ashraf",
               "email": "ashrf576@newschool.edu",
@@ -140,7 +140,7 @@
           {
             "id": "nick-lyons-title-tba",
             "category": "Hidden Narratives",
-            "title": "title tba",
+            "title": "Nick Title TBA",
             "author": {
               "name": "Nick Lyons",
               "email": "lyonn670@newschool.edu",
@@ -160,7 +160,7 @@
           {
             "id": "katya-danziger-title-tba",
             "category": "Hidden Narratives",
-            "title": "title tba",
+            "title": "Katya Title TBA",
             "author": {
               "name": "Katya Danziger",
               "email": "danzk958@newschool.edu",
@@ -180,7 +180,7 @@
           {
             "id": "anon-title-tba",
             "category": "Hidden Narratives",
-            "title": "title tba",
+            "title": "Anon Title TBA",
             "author": {
               "name": "Anonymous",
               "email": "anon@newschool.edu",
@@ -190,7 +190,7 @@
               "body": "tba",
               "images": [
                 {
-                  "url": "https://example.com/image1.jpg",
+                  "url": "/images/ANON_FINAL.png",
                   "caption": "An illustrative image",
                   "alt_text": "Image showing zine artwork"
                 }

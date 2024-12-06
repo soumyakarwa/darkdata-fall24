@@ -23,7 +23,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: var(--gap); 
-		min-height: 80vh;
+		min-height: 100vh;
 		max-width: var(--app-width); 
 		margin: var(--app-margins);  
 	}
