@@ -21,7 +21,9 @@
 		
 		<div class="subtitle grain-filter">
 			<div id="volume">VOLUME SIX</div>
+			<span class="separator">—</span>
 			<div id="theme">UNMASKING TECH'S VEIL</div>
+			<span class="separator">—</span>
 			<div id="edition">FALL 2024</div>
 		</div>
 	</div>
@@ -106,6 +108,7 @@
 		line-height: var(--line-height); 
 		padding:  var(--subtitle-padding); 
 		box-sizing: border-box;    
+		transition: background-color 0.5s ease;
 	}
 
 	li:hover{
@@ -114,6 +117,7 @@
 
 	nav ul li.active {
 		background-color: var(--red); 
+		width: 100%; 
 	/* color: white;
 	font-weight: bold;
 	border: 1px solid white; */

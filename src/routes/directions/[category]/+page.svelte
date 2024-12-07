@@ -28,15 +28,15 @@
 
 
 <section>
-  <div id="article-nav">
+  <div id="category-article-nav-top" class="article-nav">
     <button on:click={prevArticle} aria-label="Previous Article" class="carousel-button">
       <span class="material-icons">arrow_back</span>
     </button>
 
-    <div id="article-title-content">
-      <div id="article-title ">{articleData.title}</div>
+    <div id="category-article-nav-top-content" class="article-title-content">
+      <div class="article-title grain-filter">{articleData.title}</div>
       <div class="ellipse-bullet"></div>
-      <div id="article-author grain-filter">{articleData.author.name}</div>
+      <div class="article-author grain-filter">{articleData.author.name}</div>
     </div>
 
     <button on:click={nextArticle} aria-label="Next Article" class="carousel-button">
@@ -46,6 +46,22 @@
 
   <div class="{animationClass}">
     <ArticleContent articleData={articleData} />
+  </div>
+
+  <div id="category-article-nav-bottom" class="article-nav">
+    <button on:click={prevArticle} aria-label="Previous Article" class="carousel-button">
+      <span class="material-icons">arrow_back</span>
+    </button>
+
+    <div id="category-article-nav-bottom-content" class="article-title-content">
+      <div class="article-title grain-filter">{articleData.title}</div>
+      <div class="ellipse-bullet"></div>
+      <div class="article-author grain-filter">{articleData.author.name}</div>
+    </div>
+
+    <button on:click={nextArticle} aria-label="Next Article" class="carousel-button">
+      <span class="material-icons">arrow_forward</span>
+    </button>
   </div>
 </section>
 
@@ -70,7 +86,7 @@
     padding: calc(var(--gap)/2);
   }
 
-  #article-nav {
+  .article-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -81,7 +97,7 @@
     font-size: var(--nav);
   }
 
-  #article-title-content {
+  .article-title-content {
     margin: auto;
     display: flex;
     flex-direction: row;

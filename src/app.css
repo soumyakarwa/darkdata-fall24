@@ -93,6 +93,22 @@ button:focus:not(:focus-visible) {
   white-space: nowrap;
 }
 
+/* Keyframe animation for the nav-swish effect */
+@keyframes nav-swish {
+  0% {
+    transform: translateX(-100%); /* Start off-screen */
+    width: 0%;
+  }
+  50% {
+    transform: translateX(0); /* Move into view */
+    width: 50%; /* Midpoint of the animation */
+  }
+  100% {
+    transform: translateX(0); /* Fully in view */
+    width: 100%; /* Expand to full width */
+  }
+}
+
 /* Swish animation for entering content */
 @keyframes swish-in {
   from {
