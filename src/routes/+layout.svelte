@@ -1,12 +1,14 @@
 <script>
 	import Header from './Header.svelte';
 	import '../app.css';
+	import P5Sketch from './P5Sketch.svelte';
 
 	let { children } = $props();
 </script>
 
 <!-- <section id="darkdata" class="grain-filter"> -->
-	<div class="app">
+	<div id="app-div" class="app">
+		<P5Sketch />
 		<Header />
 
 		<main>
