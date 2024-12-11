@@ -105,6 +105,11 @@
     gap: calc(var(--gap)/2);
   }
 
+  .article-title, .article-author{
+    letter-spacing: var(--nav-letter-spacing);
+  }
+
+
   .ellipse-bullet {
     width: calc(var(--nav)/4);
     height: calc(var(--nav)/4);

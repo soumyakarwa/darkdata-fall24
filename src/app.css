@@ -3,7 +3,7 @@
   --font-header: "Martin";
   --grey: rgb(217, 217, 217);
   --black: rgb(0, 0, 0);
-  --white: rgb(255, 255, 255);
+  --white: rgb(250, 249, 246);
   --red: rgb(255, 0, 0);
   --blue: rgb(0, 0, 255);
   --green: rgb(0, 255, 0);
@@ -23,6 +23,7 @@
   --subtitle: calc(var(--title) * var(--subtitle-to-title));
   --nav: calc(var(--subtitle) * var(--nav-to-subtitle));
   --body: calc(var(--subtitle) * var(--body-to-subtitle));
+  --caption: calc(var(--body) / 1.618);
 
   /* LETTER SPACING*/
   --letter-spacing-ratio: 0.05;
@@ -30,6 +31,7 @@
   --subtitle-letter-spacing: calc(
     var(--subtitle) * var(--letter-spacing-ratio)
   );
+  --nav-letter-spacing: calc(var(--nav) * var(--letter-spacing-ratio));
   --body-letter-spacing: calc(var(--body) * var(--letter-spacing-ratio));
 
   /* LINE HEIGHT */
@@ -91,6 +93,21 @@ button:focus:not(:focus-visible) {
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 45%;
+}
+
+.image-container p {
+  font-size: var(--caption);
 }
 
 /* Keyframe animation for the nav-swish effect */

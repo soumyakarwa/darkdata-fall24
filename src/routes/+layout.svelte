@@ -15,9 +15,6 @@
 			{@render children()}
 		</main>
 
-		<footer>
-			FOOTER PLACEHOLDER
-		</footer>
 		<svg width="0" height="0">
 			<filter id="grainy-text-high">
 			<feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" />
@@ -31,6 +28,11 @@
 			</filter>
 		</svg>
 	</div>
+	<footer>
+		<div class="footer-content">
+			Publisher: Professor David Carroll – Editors: Ariel Calvar
+		</div>
+	</footer>
 <!-- </section> -->
 
 <style>
@@ -59,13 +61,20 @@
 	}
 
 	footer {
+		background-color: var(--black); 
+		height: 10vh; 
 		flex: 0.5; 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		box-sizing: border-box;
+		color: var(--white); 
 		/* min-height: 10vh;  */
 		/* background-color: red;  */
+	}
+
+	.footer-content{
+		width: var(--app-width); 
 	}
 </style>

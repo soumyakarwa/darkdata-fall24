@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)http://localhost:5173/directions/hidden-narratives -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:5173/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<!--[--><!--]--><title>Dark Data Zine: Fall 24</title>
+    <link rel="stylesheet" href="./Dark Data Zine_ Fall 24_files/icon">
+  <style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/+page.svelte?svelte&amp;type=style&amp;lang.css">
+	section.s-y_bCXRrkrYfP {
+		padding-top: var(--gap); 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		/* max-width: 80%;  */
+	}
+ .s-y_bCXRrkrYfP{}</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/Header.svelte?svelte&amp;type=style&amp;lang.css">
+	header.s-Cmt25qOMERl7 {
+		font-family: var(--font-header);
+		display: flex;
+		flex-direction: column; 
+		justify-content: center;
+		align-items: center;
+		gap: var(--gap); 
+		width: 100%; 
+	}
+
+	#banner.s-Cmt25qOMERl7 {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		width: 100%; 
+		background-color: var(--black); 
+		padding: var(--banner-margins) 0;
+    	color: var(--white);
+    	gap: var(--title-subtitle-gap);
+	}
+	
+	nav.s-Cmt25qOMERl7 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%; 
+	}
+
+	#banner.s-Cmt25qOMERl7 a:where(.s-Cmt25qOMERl7), nav.s-Cmt25qOMERl7 a:where(.s-Cmt25qOMERl7){
+		text-decoration: none;
+		color: var(--white); 
+	}
+
+	ul.s-Cmt25qOMERl7 {
+		display: flex;               
+		justify-content: space-between; 
+		align-items: center;         
+		width: 100%;                 
+		padding: 0;                  
+		margin: 0;                   
+		list-style: none;            
+	}
+
+	li.s-Cmt25qOMERl7 {
+		text-align: center;          
+		background: var(--black);    
+		font-size: var(--nav);
+		letter-spacing: var(--body-letter-spacing); 
+		line-height: var(--line-height); 
+		padding:  var(--subtitle-padding); 
+		box-sizing: border-box;    
+		transition: background-color 0.5s ease;
+	}
+
+	li.s-Cmt25qOMERl7:hover{
+		background-color: var(--red); 
+	}
+
+	nav.s-Cmt25qOMERl7 ul:where(.s-Cmt25qOMERl7) li.active:where(.s-Cmt25qOMERl7) {
+		background-color: var(--red); 
+		width: 100%; 
+	/* color: white;
+	font-weight: bold;
+	border: 1px solid white; */
+	}
+
+	.title.s-Cmt25qOMERl7 {
+		display: flex; 
+		flex-direction: row;
+		align-items: flex-end;
+		justify-content: center;
+		/* padding: 0 var(--subtitle-padding) 0 var(--subtitle-padding);  */
+		gap: var(--gap); 
+		height: auto; 
+	}
+
+	#title-pt-1.s-Cmt25qOMERl7, #title-pt-2.s-Cmt25qOMERl7 {
+		font-size: var(--title);
+		letter-spacing: var(--title-letter-spacing);
+		line-height: var(--line-height);
+	}
+
+	.title.s-Cmt25qOMERl7 #header-image:where(.s-Cmt25qOMERl7){
+		width: calc(var(--title)/1); 
+		height: calc(var(--title)/1.5); 
+		display: inline-block;
+		/* padding-top: calc(var(--title)/1.5); */
+	}
+
+
+	.subtitle.s-Cmt25qOMERl7 {
+		font-size: var(--subtitle);
+		letter-spacing: var(--subtitle-letter-spacing);
+		line-height: var(--line-height);
+		background-color: var(--white); 
+		color: var(--black); 
+		margin: 0 var(--banner-margins);
+		padding: 0 var(--subtitle-padding) var(--subtitle-padding) var(--subtitle-padding); 
+		display: flex; 
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+	}
+ .s-Cmt25qOMERl7{}</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/app.css">:root {
+  --font-body: "Garamond-Narrow";
+  --font-header: "Martin";
+  --grey: rgb(217, 217, 217);
+  --black: rgb(0, 0, 0);
+  --white: rgb(250, 249, 246);
+  --red: rgb(255, 0, 0);
+  --blue: rgb(0, 0, 255);
+  --green: rgb(0, 255, 0);
+
+  /* MARGINS & WIDTHS*/
+  --gap: 2vh;
+  --app-width: 70vw;
+  --app-margins: 5vh 15vw;
+
+  /* RATIOS */
+  --subtitle-to-title: calc(21.5 / 70);
+  --nav-to-subtitle: calc(12 / 22.5);
+  --body-to-subtitle: calc(8 / 22.5);
+
+  /* FONT-SIZES */
+  --title: 13vw;
+  --subtitle: calc(var(--title) * var(--subtitle-to-title));
+  --nav: calc(var(--subtitle) * var(--nav-to-subtitle));
+  --body: calc(var(--subtitle) * var(--body-to-subtitle));
+  --caption: calc(var(--body) / 1.618);
+
+  /* LETTER SPACING*/
+  --letter-spacing-ratio: 0.05;
+  --title-letter-spacing: calc(var(--title) * var(--letter-spacing-ratio));
+  --subtitle-letter-spacing: calc(
+    var(--subtitle) * var(--letter-spacing-ratio)
+  );
+  --nav-letter-spacing: calc(var(--nav) * var(--letter-spacing-ratio));
+  --body-letter-spacing: calc(var(--body) * var(--letter-spacing-ratio));
+
+  /* LINE HEIGHT */
+  --line-height: 0.8;
+
+  /* HEADER PADDING/MARGINS */
+  --banner-margins: calc(var(--subtitle) / 4);
+  --title-subtitle-gap: calc(var(--banner-margins) * 2);
+  --subtitle-padding: calc(var(--banner-margins) / 2);
+
+  /* MISC */
+  --scale: 0.6;
+
+  font-family: var(--font-body);
+  color: var(--color-text);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-size: var(--body);
+  font-family: var(--font-body);
+}
+
+.content-title {
+  font-size: var(--nav);
+  margin-bottom: var(--gap);
+}
+
+.content {
+  /* max-width: 80%; */
+}
+
+.grain-filter {
+  filter: url(#grainy-text-high);
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container img {
+  max-width: 45%;
+}
+
+.image-container p {
+  font-size: var(--caption);
+}
+
+/* Keyframe animation for the nav-swish effect */
+@keyframes nav-swish {
+  0% {
+    transform: translateX(-100%); /* Start off-screen */
+    width: 0%;
+  }
+  50% {
+    transform: translateX(0); /* Move into view */
+    width: 50%; /* Midpoint of the animation */
+  }
+  100% {
+    transform: translateX(0); /* Fully in view */
+    width: 100%; /* Expand to full width */
+  }
+}
+
+/* Swish animation for entering content */
+@keyframes swish-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Swish animation for exiting content */
+@keyframes swish-out {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+.swish-enter {
+  animation: swish-in 0.5s ease forwards;
+}
+
+.swish-exit {
+  animation: swish-out 0.5s ease forwards;
+}
+
+@font-face {
+  font-family: "Martin";
+  src: url("/src/lib/fonts/MARTIN-Regular.otf");
+}
+
+@font-face {
+  font-family: "Garamond-Narrow";
+  src: url("/src/lib/fonts/itc-garamond-std-book-narrow.otf");
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --gap: 1vh;
+    --app-width: 90vw;
+    --app-margins: 2.5vh 5vw;
+    --title: 18vw;
+    --body-to-subtitle: 17 / 22.5;
+    --nav-to-subtitle: 20 / 22.5;
+  }
+
+  .grain-filter {
+    filter: url(#grainy-text-low);
+  }
+}
+</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/P5Sketch.svelte?svelte&amp;type=style&amp;lang.css">
+    #sketch-container.s-CbOCuk9sJJqK{
+        /* background-color: black;  */
+        width: 100vw; 
+        /* height: 200vh;  */
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        z-index: 10; 
+        pointer-events: none;
+    }
+   .s-CbOCuk9sJJqK{}</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/+layout.svelte?svelte&amp;type=style&amp;lang.css">
+	.app.s-7IPF32Wcq3s8 {
+		flex: 0.5; 
+		display: flex;
+		flex-direction: column;
+		gap: var(--gap); 
+		min-height: 100vh;
+		max-width: var(--app-width); 
+		margin: var(--app-margins);  
+	}
+	
+	/* #darkdata{
+		background-color: var(--black);
+	} */
+
+	main.s-7IPF32Wcq3s8 {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 0 auto;
+		box-sizing: border-box;
+		/* background-color: aqua */
+	}
+
+	footer.s-7IPF32Wcq3s8 {
+		flex: 0.5; 
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		/* min-height: 10vh;  */
+		/* background-color: red;  */
+	}
+ .s-7IPF32Wcq3s8{}</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/directions/[category]/[id]/+page.svelte?svelte&amp;type=style&amp;lang.css">
+    .article-img.s-H8_t5mgGnltg{
+      width: 100%; 
+    }
+
+    .article-content.s-H8_t5mgGnltg{
+        font-family: var(--font-body); 
+    }
+
+    p.s-H8_t5mgGnltg {
+        margin-bottom: 0; 
+    }
+
+    h3.s-H8_t5mgGnltg {
+        text-align: center; 
+    }
+
+    ol.s-H8_t5mgGnltg {
+        padding: 0 0 0 2%; 
+        font-size: var(--caption); 
+    }
+
+ .s-H8_t5mgGnltg{}</style><style type="text/css" data-vite-dev-id="/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/src/routes/directions/[category]/+page.svelte?svelte&amp;type=style&amp;lang.css">
+  section.s-KwZwOAzrdmSw {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap);
+    font-family: var(--font-header);
+  }
+
+  .carousel-button.s-KwZwOAzrdmSw {
+    background: none;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: calc(var(--gap)/2);
+  }
+
+  .article-nav.s-KwZwOAzrdmSw {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: var(--subtitle-padding) 0;
+    width: 100%;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: var(--nav);
+  }
+
+  .article-title-content.s-KwZwOAzrdmSw {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: calc(var(--gap)/2);
+  }
+
+  .article-title.s-KwZwOAzrdmSw, .article-author.s-KwZwOAzrdmSw{
+    letter-spacing: var(--nav-letter-spacing);
+  }
+
+
+  .ellipse-bullet.s-KwZwOAzrdmSw {
+    width: calc(var(--nav)/4);
+    height: calc(var(--nav)/4);
+    background-color: var(--white);
+    border-radius: 50%;
+  }
+ .s-KwZwOAzrdmSw{}</style></head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents"><!--[--><!--[--><!----><div id="app-div" class="app s-7IPF32Wcq3s8"><div id="sketch-container" class="s-CbOCuk9sJJqK"><canvas id="defaultCanvas0" class="p5Canvas" width="3000" height="3012" style="width: 1500px; height: 1506.23px;"></canvas></div><!----> <header class="s-Cmt25qOMERl7"><div id="banner" class="s-Cmt25qOMERl7"><a href="http://localhost:5173/" class="s-Cmt25qOMERl7"><div class="title grain-filter s-Cmt25qOMERl7"><div id="title-pt-1" class="s-Cmt25qOMERl7">DARK</div> <div id="title-icon" class="s-Cmt25qOMERl7"><img id="header-image" src="./Dark Data Zine_ Fall 24_files/Favicon_Large.png" alt="Dark Data Icon" class="s-Cmt25qOMERl7"></div> <div id="title-pt-2" class="s-Cmt25qOMERl7">DATA</div></div></a> <div class="subtitle grain-filter s-Cmt25qOMERl7"><div id="volume" class="s-Cmt25qOMERl7">VOLUME SIX</div> <span class="separator s-Cmt25qOMERl7">—</span> <div id="theme" class="s-Cmt25qOMERl7">UNMASKING TECH'S VEIL</div> <span class="separator s-Cmt25qOMERl7">—</span> <div id="edition" class="s-Cmt25qOMERl7">FALL 2024</div></div></div> <nav class="grain-filter s-Cmt25qOMERl7"><ul class="s-Cmt25qOMERl7"><li id="nav-digital-misogyny" class="s-Cmt25qOMERl7" aria-current="page"><a href="http://localhost:5173/directions/digital-misogyny" class="s-Cmt25qOMERl7">DIGITAL MISOGYNY</a></li> <li id="nav-surveillance" class="s-Cmt25qOMERl7"><a href="http://localhost:5173/directions/surveillance-and-the-media" class="s-Cmt25qOMERl7">SURVEILLANCE &amp; THE MEDIA</a></li> <li id="nav-hidden-narratives" class="s-Cmt25qOMERl7 active" aria-current="page"><a href="http://localhost:5173/directions/hidden-narratives" class="s-Cmt25qOMERl7">HIDDEN NARRATIVES</a></li></ul></nav></header><!----> <main class="s-7IPF32Wcq3s8"><!----><section class="s-KwZwOAzrdmSw"><div id="category-article-nav-top" class="article-nav s-KwZwOAzrdmSw"><button aria-label="Previous Article" class="carousel-button s-KwZwOAzrdmSw"><span class="material-icons s-KwZwOAzrdmSw">arrow_back</span></button> <div id="category-article-nav-top-content" class="article-title-content s-KwZwOAzrdmSw"><div class="article-title grain-filter s-KwZwOAzrdmSw">Anon Title TBA</div> <div class="ellipse-bullet s-KwZwOAzrdmSw"></div> <div class="article-author grain-filter s-KwZwOAzrdmSw">Anonymous</div></div> <button aria-label="Next Article" class="carousel-button s-KwZwOAzrdmSw"><span class="material-icons s-KwZwOAzrdmSw">arrow_forward</span></button></div> <div class="swish-enter s-KwZwOAzrdmSw"><section class="article-content s-H8_t5mgGnltg"><div class="s-H8_t5mgGnltg"><!----><img class="article-img s-H8_t5mgGnltg" src="./Dark Data Zine_ Fall 24_files/ANON_FINAL.png" alt="Article Image"><!----> <!----> <p class="s-H8_t5mgGnltg"><h3>My Introduction to the Minecraft to Cybercrime Pipeline</h3>At 11 years old, I first discovered online games, like Minecraft, which became my escape from the small, insular world of Chatham, Massachusetts. Growing up in a town where I’d known the same eighty kids since kindergarten, I longed to escape . Minecraft became my gateway—a place where I could slip into the persona of "User," the fearless leader of my faction. The friends I made online felt as real as any in person, opening my eyes to perspectives I’d never encountered in my everyday life.<br><br>This was the story I shared in my college application  essay, one that helped me gain acceptance to colleges with less than 9% acceptance rates. In that essay, I described how my time online taught me empathy, curiosity, and design, bringing me closer to the person I wanted to become.<br><br>But there was more to that story—parts I left out, not because I was ashamed, but because they felt too raw for a college application. Over the years, I spent roughly 15,000 hours in my room, my family assuming I was just playing Minecraft. In reality, I was interacting with hundreds of people online, some with nefarious intentions like pedophiles and criminals.  These interactions would shape how I saw the world, particularly how power works in a connected, digital society. I was DDosed (Distributed Denial of Service), threatened, and even doxxed, but that wasn't a unique experience for someone playing hardcore factions(HCF) from 2012 to 2018. For all its chaos, this experience became an unconventional education. Despite everything, I am deeply grateful for what I learned.<br><br>This article will both touch on my personal experiences with the Minecraft to cybercrime pipeline and  explore the broader culture of Minecraft’s online world—a world that shaped not only me but also countless others, rippling outward to influence the larger cyber landscape. From DDoS attacks to account hijacking, the knowledge shared among  this community—whether used positively or not—has had lasting effects.<br><br>Doxxing, for example,the practice of exposing someone’s personal information online, seemed like an abstract danger until I became  its target. One day, someone identified my school’s name in a game chat. I couldn’t unsee the message. Someone, somewhere, knew exactly where I was. "User" was supposed to be my persona, my shield. But suddenly,  I wasn’t protected—a stranger  not only knew where I attended school but also knew my home address, my parents’ names, everything. Each day, I walked into school with completely chewed through fingernails and anticipated the possibility of hearing my name over the loudspeaker or seeing the police waiting at my school. To my relief, nothing ever came of this, but I remained uneasy for many years.<br><br>I still keep in touch with friends I made online when I was just 11, many of whom, like me, are now on paths to achieving great things in life. While none of us ever crossed any major lines, it’s striking how often I hear about someone we knew—either closely or loosely—being arrested for cybercrimes, with some facing over 25 years in federal prison. Even those cases barely scratch the surface of the cybercriminals who emerged from the HCF community.<h3>Paras Jha - Cybercriminal</h3>Minecraft’s open-ended gameplay and competitive server culture have long-served as fertile ground for experimentation and innovation. For Paras Jha, a Rutgers University computer science major and Minecraft enthusiast, it was more than just a game—it was the starting point for one of the most consequential cyberattacks of the decade.<br><br>Jha’s story is a cautionary tale of how curiosity and technical skill can spiral into something far more disruptive. His early involvement in Minecraft server wars introduced him to DDoS attacks, a tactic often used to overwhelm a rival server with traffic until it crashes. In the high-stakes world of Minecraft servers, where hosting a popular server could mean earning tens of thousands of dollars per month, DDoS attacks became a common tool of sabotage. Jha’s technical expertise led him to create and sell DDoS protection services to server owners—essentially running what prosecutors later described as a high-tech protection racket.<br><br>But Jha’s ambitions didn’t stop at Minecraft. Along with two collaborators, Josiah White and Dalton Norman, he developed the Mirai botnet, a powerful piece of malware that hijacked Internet of Things (IoT) devices—smart cameras, routers, and other internet-connected gadgets—to create a network of hundreds of thousands of compromised devices. With this botnet, the trio launched DDoS attacks on a scale never seen before. One of the most infamous incidents occurred in October 2016, when Mirai was used to attack Dyn, a major DNS provider, disrupting internet access across the United States and taking down websites like Twitter, Netflix, and PayPal for hours.<br><br>The irony of Mirai’s origins isn’t lost on those familiar with Jha’s background. What began as tactics to dominate Minecraft servers—crippling competitors and securing a larger player base—evolved into attacks targeting critical internet infrastructure. Mirai’s ability to exploit IoT devices exposed a glaring vulnerability in modern technology: the lack of basic security measures in the rapidly growing ecosystem of connected devices.<br><br>Even before Mirai, Jha made headlines for his attacks on Rutgers University’s computer network, where he was a student. Using the alias “exfocus,” he launched a series of DDoS attacks during exam periods, causing widespread disruption to internet access and online resources for students and faculty. The attacks, which forced Rutgers to spend millions on cybersecurity upgrades, were as much a statement of defiance as they were a demonstration of Jha’s technical prowess.<br><br>Mirai’s release as open-source code in September 2016 marked a turning point. By publishing the malware online, Jha and his collaborators sought to obscure their involvement and create plausible deniability. Instead, they unleashed a tool that hackers worldwide quickly adapted for their own purposes. Within weeks, new variants of Mirai were used to launch attacks against organizations, governments, and even entire countries. The widespread availability of Mirai democratized the ability to conduct large-scale DDoS attacks, amplifying the chaos it could cause.<br><br>Brian Krebs, the cybersecurity journalist whose site was knocked offline by Mirai, described Jha as emblematic of a generation raised on games like Minecraft, where building, breaking, and experimenting were second nature. “The game is brilliant in a lot of ways,” Krebs noted, “but it also teaches you how to think about systems in ways that aren’t always positive.” Jha’s path—from Minecraft devotee to architect of one of the largest botnets in history—demonstrates both the power and the danger of technical expertise developed in an unregulated environment.<br><br>Ultimately, Jha’s actions caught up with him. After an extensive investigation, he and his collaborators pleaded guilty to charges of conspiracy to violate the Computer Fraud and Abuse Act. While Jha avoided prison time in exchange for cooperating with federal authorities, the damage caused by Mirai and its variants continues to ripple across the internet.<br><br>Jha’s story highlights a fundamental truth about the digital world: the same skills that empower creativity and innovation can also enable exploitation and destruction. What began as a way to dominate a Minecraft server grew into a global lesson about the consequences of unchecked ambition in an interconnected world.<h3>Graham Clark - Social Engineer</h3>While Paras Jha weaponized his coding expertise to create one of the most devastating botnets in history, Graham Ivan Clark—known in gaming and hacking circles as “Open” or “OpenHCF”—epitomizes the archetype of the manipulative social engineer. Unlike Jha’s technical precision, Clark’s rise in the digital underworld was fueled by his charisma, psychological acumen, and an unrelenting pursuit of wealth. His journey from scamming Minecraft players to orchestrating one of the most infamous Twitter hacks of all time is both a cautionary tale and a disturbing reminder of the power dynamics that shape online communities.<br><br>Clark’s story begins in the chaotic world of Minecraft Hardcore Factions (HCF), a highly competitive game mode notorious for fostering toxic behavior. By the age of 10, Clark had already built a reputation as a cunning player, manipulating others to gain resources and power. He would promise to sell in-game items like rare capes or coveted OG usernames, only to vanish after receiving payment. As his reputation grew, so did his audacity. Former peers recount how Clark’s charm masked a ruthless streak: he could convince others to help him build his scams, only to leave them burned and humiliated. One of his accomplices described Clark’s attitude as a combination of greed and detachment—he was unbothered by the fallout of his actions.<br><br>This toxic environment wasn’t just a backdrop; it was a training ground. HCF players engaged in activities like doxxing, DDoS attacks, and swatting, which blurred the lines between online mischief and criminal behavior. For Clark, this world was a gateway to broader schemes. By 2016, his exploits extended to OGUsers, a forum where stolen social media accounts and rare usernames were bought and sold. The username “Open,” which he used in Minecraft and hacking communities, likely originated from these markets, where he refined his skills in social engineering. Unlike hacking tools, which require technical expertise, social engineering is a psychological game. Clark excelled at this, manipulating people into giving up credentials or access under false pretenses.<br><br>At just 15, Clark transitioned from Minecraft scams to SIM-swapping, a more lucrative and dangerous form of cybercrime. By exploiting weaknesses in phone carrier systems, Clark and his accomplices could hijack victims’ phone numbers, reset passwords, and drain cryptocurrency wallets. In 2019, he executed a SIM-swap attack that netted him $856,000 worth of Bitcoin from a Seattle tech investor. While authorities eventually linked him to the crime, Clark avoided formal charges by returning part of the stolen funds. This brush with law enforcement seemed to embolden him rather than deter him.<br><br>Clark’s most infamous exploit came in July 2020, when he orchestrated the Twitter hack that compromised accounts of high-profile figures, including Barack Obama, Elon Musk, and Bill Gates. Posing as an IT employee, Clark accessed Twitter’s internal systems via a phishing scheme targeting employees working remotely during the COVID-19 pandemic. Once inside, he hijacked celebrity accounts to post a Bitcoin-doubling scam, earning $117,000 in cryptocurrency. This figure paled in comparison to his previous exploits, but the hack’s audacity made it the biggest security breach in Twitter’s history. At the time of his arrest, authorities discovered Clark had an additional $3 million in Bitcoin, likely accumulated through years of fraud.<br><br>Clark’s ability to navigate online spaces with ease was a testament to his adaptability and cunning. He wasn’t just a scammer; he was a product of the digital culture that shaped him. The HCF community had normalized behaviors like account theft and harassment, framing them as clever tactics rather than moral failures. By the time Clark moved on to more sophisticated crimes, he had already built a network of accomplices and a reputation as a skilled manipulator.<br><br>Yet, his story is also a tale of hubris. Clark’s boldness, flaunted wealth, and disregard for consequences made him a target. After the Twitter hack, his co-conspirators—many of whom were recruited from OGUsers—quickly turned on him, accusing him of greed and withholding stolen funds. The FBI arrested him just weeks after the hack, charging him with 30 felonies, including wire fraud and identity theft. Due to his juvenile status, Clark struck a plea deal, serving only six years under Florida’s youthful offender law.<br><br>The rise and fall of Graham Ivan Clark illuminate the dark underbelly of online gaming and hacking cultures. From Minecraft scams to multi-million-dollar cryptocurrency thefts, Clark’s journey reveals how toxic environments can incubate criminal talent and how digital anonymity can foster a detachment from ethical considerations. His story serves as a stark reminder of the societal risks posed by these insular, exploitative communities—and the need to address the conditions that allow them to thrive.<h3>Aspartame - Hacker</h3>Aspertaine’s name became synonymous with terror in the Minecraft HCF (Hardcore Factions) community, a realm already infamous for its cutthroat culture and toxic dynamics. What began as in-game trolling and petty scams quickly evolved into a pattern of harassment and abuse so extreme that it left a trail of fear far beyond the confines of the virtual world.<br><br>At first, Aspartame was a nuisance—one of countless players who blurred the line between competition and cruelty. His early antics, which included hacking accounts and leaking personal information, were a common feature of the HCF landscape. But Aspertaine’s appetite for power and control soon outgrew the game itself. He began compiling databases of personal information, leveraging doxxing bots to pull private details about anyone who crossed his path. For him, it wasn’t just about winning; it was about destruction.<br><br>His favorite weapon of choice was swatting. With a single call, he could turn someone’s home into a scene of chaos, sending armed police to respond to fabricated emergencies. One victim recalled watching from a window as their house was surrounded by SWAT officers, guns drawn, after a false report claimed there had been a murder inside. Another family endured hours of interrogation because Aspartame had hacked their Ring doorbell, taunting them with threats while they listened in terror. Over the course of one week, he orchestrated swatting attacks across twelve states, terrorizing families who had no connection to his online world.<br><br>These weren’t isolated incidents; they were a pattern. In one particularly harrowing case, a school received a bomb threat that prompted a full evacuation. The call wasn’t random—it was part of Aspertaine’s systematic campaign to destroy the lives of those who had the misfortune of crossing him. He didn’t just want to scare his victims; he wanted them to feel utterly powerless. For Aspartame, this was a sport.<br><br>But his cruelty didn’t stop with swatting. Perhaps the most disturbing aspect of Aspertaine’s behavior was his exploitation of young girls. Using the personal information he had collected, he extorted them into sending degrading photos of themselves—known as “fan signs”—to prove their submission. For many victims, this wasn’t just an invasion of privacy; it was a deeply traumatic experience that drove them offline or left them isolated and afraid.<br><br>Aspartame bragged openly about these extortions, inviting others to join his twisted games. In one group chat, he coerced a 13-year-old boy into writing his name on his face, threatening to call in a bomb threat to the boy’s school if he refused. He leveraged his power in Discord servers, creating bots capable of pulling detailed personal information on players with a single command. The fear he inspired was so pervasive that even seasoned hackers hesitated to challenge him.<br><br>The culture of the HCF community, with its unchecked toxicity and emphasis on power, provided fertile ground for Aspertaine’s rise. Server administrators, well aware of his reputation, often turned a blind eye or even collaborated with him. On one server, he paid for administrative privileges, which he used to manipulate and harass players. On another, he blackmailed staff into lifting bans against him, threatening to leak their personal information if they didn’t comply.<br><br>Eventually, Aspertaine’s actions drew the attention of law enforcement. A series of bomb threats and swatting incidents triggered an FBI investigation, culminating in his arrest in 2022. Despite wiping his computer before authorities arrived, his trail of crimes was too extensive to conceal. He ultimately pleaded guilty to multiple charges, including identity theft and conspiracy, and was sentenced to seven years in prison.<br><br>Even now, the fear he sowed lingers. His victims—some as young as 13—continue to grapple with the trauma he inflicted. Families upended by swatting incidents recall the nights they spent in terror, wondering if they would survive. And yet, Aspertaine’s story is more than just a cautionary tale about one individual’s descent into cruelty. It’s a reflection of a digital culture that too often rewards the worst behaviors, a warning about what can happen when communities prioritize power over accountability.<h3>Conclusion:</h3>Through these stories, I hoped to offer a clearer understanding of the Hardcore Factions (HCF) community and its peculiar evolution into a breeding ground for cybercrime and illicit activity. While no singular explanation can account for why this gamemode attracted so many individuals who turned to criminality, my own experience suggests that it fostered a "frat-like" brotherhood. This bond could be both empowering and destructive, creating a sense of shared identity that often blurred the lines between camaraderie and complicity.<br><br>Looking at this through the framework of this class, I seek to  illustrate how unregulated digital spaces and communities can evolve into powerful, yet often destructive, ecosystems. HCF and similar subcultures thrive on the misuse of data, anonymity, and exploitation of trust, creating environments where digital tools can be weaponized in ways their creators never intended. These spaces are microcosms of larger discussions about the ethical dimensions of data and technology, emphasizing how the lack of oversight and accountability can lead to unforeseen consequences.<br><br>The relevance of examining these stories lies in its ability to highlight the unintended intersections of technology, behavior, and community dynamics. These stories force us to grapple with the dual-edged nature of digital innovation: the same tools that empower can also be used to exploit. Understanding how these ecosystems operate is essential for addressing the broader societal implications of data and technology in our lives. Ultimately, the story of HCF is a cautionary tale—a reminder of the potential for technology to shape our futures in unexpected ways, for better or worse.<br><br><!----></p> <!----></div></section><!----></div> <div id="category-article-nav-bottom" class="article-nav s-KwZwOAzrdmSw"><button aria-label="Previous Article" class="carousel-button s-KwZwOAzrdmSw"><span class="material-icons s-KwZwOAzrdmSw">arrow_back</span></button> <div id="category-article-nav-bottom-content" class="article-title-content s-KwZwOAzrdmSw"><div class="article-title grain-filter s-KwZwOAzrdmSw">Anon Title TBA</div> <div class="ellipse-bullet s-KwZwOAzrdmSw"></div> <div class="article-author grain-filter s-KwZwOAzrdmSw">Anonymous</div></div> <button aria-label="Next Article" class="carousel-button s-KwZwOAzrdmSw"><span class="material-icons s-KwZwOAzrdmSw">arrow_forward</span></button></div></section><!----><!----></main> <footer class="s-7IPF32Wcq3s8">FOOTER PLACEHOLDER</footer> <svg width="0" height="0" class="s-7IPF32Wcq3s8"><filter id="grainy-text-high" class="s-7IPF32Wcq3s8"><feturbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" class="s-7IPF32Wcq3s8"></feturbulence><fedisplacementmap in="SourceGraphic" scale="4" class="s-7IPF32Wcq3s8"></fedisplacementmap></filter></svg> <svg width="0" height="0" class="s-7IPF32Wcq3s8"><filter id="grainy-text-low" class="s-7IPF32Wcq3s8"><feturbulence type="fractalNoise" baseFrequency="0.9" numOctaves="3" class="s-7IPF32Wcq3s8"></feturbulence><fedisplacementmap in="SourceGraphic" scale="2" class="s-7IPF32Wcq3s8"></fedisplacementmap></filter></svg></div><!----><!--]--> <!--[!--><div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0; top: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px">Dark Data Zine: Fall 24<!----></div><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_dev = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("/node_modules/@sveltejs/kit/src/runtime/client/entry.js"),
+						import("/@fs/Users/SoumyaK/Desktop/Parsons/Academics/Fall-2024/Dark-Data/darkdata-fall24/.svelte-kit/generated/client/app.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  
+
+</body></html>
