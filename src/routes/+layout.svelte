@@ -30,7 +30,24 @@
 	</div>
 	<footer>
 		<div class="footer-content">
-			Publisher: Professor David Carroll – Editors: Ariel Calvar
+			<div class="grainy-text-low footer-team">
+				<div>PUBLISHER</div>
+				<div class="name">Professor David Caroll</div>
+			</div>
+			<div class="grainy-text-low footer-team">
+				EDITORS
+				<div class="name">Ariel Calver</div>
+				<div class="name">Katya Danziger</div>
+			</div>
+			<div class="grainy-text-low footer-team">
+				TECH DIRECTION
+				<div class="name">Soumya Karwa</div>
+			</div>
+			<div class="grainy-text-low footer-team">
+				ART DIRECTION
+				<div class="name">Emily Li, BFA CD'25</div>
+				<div class="name">Evelyn Gardner</div>
+			</div>
 		</div>
 	</footer>
 <!-- </section> -->
@@ -62,7 +79,7 @@
 
 	footer {
 		background-color: var(--black); 
-		height: 10vh; 
+		height: 20vh; 
 		flex: 0.5; 
 		display: flex;
 		flex-direction: column;
@@ -70,11 +87,29 @@
 		align-items: center;
 		box-sizing: border-box;
 		color: var(--white); 
+		font-family: var(--font-header); 
 		/* min-height: 10vh;  */
 		/* background-color: red;  */
 	}
 
-	.footer-content{
+	.footer-content {
 		width: var(--app-width); 
+		font-size: var(--nav); 
+		display: flex; 
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;	
+	}
+
+	.footer-team {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.name {
+		font-family: var(--font-body); 
+		font-size: var(--body); 
 	}
 </style>

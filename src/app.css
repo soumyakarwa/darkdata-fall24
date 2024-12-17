@@ -49,6 +49,10 @@
   color: var(--color-text);
 }
 
+sup {
+  font-size: var(--caption);
+}
+
 body {
   min-height: 100vh;
   margin: 0;
@@ -95,11 +99,16 @@ button:focus:not(:focus-visible) {
   white-space: nowrap;
 }
 
+a {
+  color: var(--black);
+}
+
 .image-container {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--gap);
 }
 
 .image-container img {

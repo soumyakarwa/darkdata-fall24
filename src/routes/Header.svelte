@@ -27,7 +27,7 @@
 			<div id="edition">FALL 2024</div>
 		</div>
 	</div>
-	<nav class="grain-filter">
+	<nav id="navigation" class="grain-filter">
 		<ul>
 			<li 
 				id="nav-digital-misogyny" 
