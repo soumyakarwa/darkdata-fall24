@@ -36,17 +36,17 @@
 			</div>
 			<div class="grainy-text-low footer-team">
 				EDITORS
-				<div class="name">Ariel Calver</div>
-				<div class="name">Katya Danziger</div>
+				<div class="name">Ariel Calver, MFA DT'25</div>
+				<div class="name">Katya Danziger, program</div>
 			</div>
 			<div class="grainy-text-low footer-team">
 				TECH DIRECTION
-				<div class="name">Soumya Karwa</div>
+				<div class="name">Soumya Karwa, MFA DT'25</div>
 			</div>
 			<div class="grainy-text-low footer-team">
 				ART DIRECTION
 				<div class="name">Emily Li, BFA CD'25</div>
-				<div class="name">Evelyn Gardner</div>
+				<div class="name">Evelyn Gardner, BFA CD'25</div>
 			</div>
 		</div>
 	</footer>
