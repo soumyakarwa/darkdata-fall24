@@ -1,78 +1,76 @@
 <script>
   export let data;
-  import ArticleContent from './[id]/+page.svelte'; // Import the component
+  // import {onMount} from 'svelte'; 
+  // import { goto } from '$app/navigation';
+  // import ArticleContent from './[id]/+page.svelte'; // Import the component
 
-  let currentArticleIndex = 0;
-  let articleData = data.category.articles[currentArticleIndex];
-  let animationClass = ''; // Animation class for swishing
+  // let currentArticleIndex = 0;
+  // let articleData = data.category.articles[currentArticleIndex];
+  // let animationClass = ''; // Animation class for swishing
 
-  $: articleData = data.category.articles[currentArticleIndex]; // Update articleData reactively
+  // console.log(articleData); 
 
-  function scrollToTopNav() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  // $: articleData = data.category.articles[currentArticleIndex]; // Update articleData reactively
 
-  function nextArticle() {
-    animationClass = 'swish-exit';
-    setTimeout(() => {
-      currentArticleIndex = (currentArticleIndex + 1) % data.category.articles.length;
-      animationClass = 'swish-enter';
-      // scrollToTopNav(); // Scroll to the top navigation
-    }, 500); // Match the duration of the animation
-  }
+  // function scrollToTopNav() {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }
 
-  function prevArticle() {
-    animationClass = 'swish-exit';
-    setTimeout(() => {
-      currentArticleIndex =
-        (currentArticleIndex - 1 + data.category.articles.length) % data.category.articles.length;
-      animationClass = 'swish-enter';
-      // scrollToTopNav(); // Scroll to the top navigation
-    }, 500); // Match the duration of the animation
-  }
+  // function updateURL() {
+  //   const articleId = data.category.articles[currentArticleIndex].id;
+  //   const category = data.category.id; // Assuming `name` or some identifier is part of your data
+  //   goto(`/directions/${category}/${articleId}`, { replaceState: true });
+  // }
 
-  function nextArticleBottom(){
-    animationClass = 'swish-exit';
-    setTimeout(() => {
-      currentArticleIndex = (currentArticleIndex + 1) % data.category.articles.length;
-      animationClass = 'swish-enter';
-      scrollToTopNav(); // Scroll to the top navigation
-    }, 500); // Match the duration of the animation
-  }
+  // function nextArticle() {
+  //   animationClass = 'swish-exit';
+  //   setTimeout(() => {
+  //     currentArticleIndex = (currentArticleIndex + 1) % data.category.articles.length;
+  //     animationClass = 'swish-enter';
+  //     // scrollToTopNav(); // Scroll to the top navigation
+  //   }, 500); // Match the duration of the animation
+  // }
 
-  function prevArticleBottom(){
-    animationClass = 'swish-exit';
-    setTimeout(() => {
-      currentArticleIndex =
-        (currentArticleIndex - 1 + data.category.articles.length) % data.category.articles.length;
-      animationClass = 'swish-enter';
-      scrollToTopNav(); // Scroll to the top navigation
-    }, 500); // Match the duration of the animation
-  }
+  // function prevArticle() {
+  //   animationClass = 'swish-exit';
+  //   setTimeout(() => {
+  //     currentArticleIndex =
+  //       (currentArticleIndex - 1 + data.category.articles.length) % data.category.articles.length;
+  //     animationClass = 'swish-enter';
+  //     // scrollToTopNav(); // Scroll to the top navigation
+  //   }, 500); // Match the duration of the animation
+  // }
+
+  // function nextArticleBottom(){
+  //   animationClass = 'swish-exit';
+  //   setTimeout(() => {
+  //     currentArticleIndex = (currentArticleIndex + 1) % data.category.articles.length;
+  //     animationClass = 'swish-enter';
+  //     scrollToTopNav(); // Scroll to the top navigation
+  //   }, 500); // Match the duration of the animation
+  // }
+
+  // function prevArticleBottom(){
+  //   animationClass = 'swish-exit';
+  //   setTimeout(() => {
+  //     currentArticleIndex =
+  //       (currentArticleIndex - 1 + data.category.articles.length) % data.category.articles.length;
+  //     animationClass = 'swish-enter';
+  //     scrollToTopNav(); // Scroll to the top navigation
+  //   }, 500); // Match the duration of the animation
+  // }
+
+  // onMount(() => {
+  //   updateURL();
+  // });
 </script>
 
 <section>
-  <div id="category-article-nav-top" class="article-nav">
-    <button on:click={prevArticle} aria-label="Previous Article" class="carousel-button">
-      <span class="material-icons">arrow_back</span>
-    </button>
-
-    <div id="category-article-nav-top-content" class="article-title-content">
-      <div class="article-title grain-filter">{articleData.title}</div>
-      <div class="ellipse-bullet"></div>
-      <div class="article-author grain-filter">{articleData.author.name}</div>
-    </div>
-
-    <button on:click={nextArticle} aria-label="Next Article" class="carousel-button">
-      <span class="material-icons">arrow_forward</span>
-    </button>
-  </div>
-
   <div class="{animationClass}">
-    <ArticleContent articleData={articleData} />
+    <ArticleContent articleData={data} />
   </div>
 
-  <div id="category-article-nav-bottom" class="article-nav">
+  <!-- <div id="category-article-nav-bottom" class="article-nav">
     <button on:click={prevArticleBottom} aria-label="Previous Article" class="carousel-button">
       <span class="material-icons">arrow_back</span>
     </button>
@@ -86,7 +84,7 @@
     <button on:click={nextArticleBottom} aria-label="Next Article" class="carousel-button">
       <span class="material-icons">arrow_forward</span>
     </button>
-  </div>
+  </div> -->
 </section>
 
 

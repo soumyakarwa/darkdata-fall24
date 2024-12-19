@@ -38,7 +38,7 @@
 				aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}
 				class:active={activeNavId === 'nav-digital-misogyny'}
 				on:click={() => handleNavClick('nav-digital-misogyny')}>
-				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
+				<a href="/directions/digital-misogyny/the-problem-with-incomplete-data">DIGITAL MISOGYNY</a>
 			</li>
 			<li 
 				id="nav-surveillance"

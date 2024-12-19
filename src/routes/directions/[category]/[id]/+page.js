@@ -2,19 +2,24 @@
 import articles from "$lib/content/articles.json";
 
 export async function load({ params }) {
-  console.log(params);
   const { category, id } = params;
+  console.log(id);
 
   // Find the relevant category and article
-  const categoryData = articles[category]; // Assume `articles.json` is structured by category
+  const categoryData = articles.zine.categories[category]; // Assume `articles.json` is structured by category
+  console.log(categoryData);
   if (!categoryData) {
     throw error(404, "Category not found");
   }
 
-  const articleData = categoryData.find((article) => article.slug === id);
+  console.log(categoryData.articles);
+  const articleData = categoryData.articles.find(
+    (article) => article.slug === id
+  );
   if (!articleData) {
     throw error(404, "Article not found");
   }
+  console.log(articleData);
 
   return {
     articleData,
