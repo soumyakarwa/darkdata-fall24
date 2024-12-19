@@ -6,10 +6,12 @@
     "categories": {
       "digital-misogyny": {
         "id": "digital-misogyny",
+        "slug": "digital-misogyny",
         "section-title": "Digital Misogyny",
         "articles": [
           {
-            "id": "neven-armanios-rodriguez-title-tbd",
+            "id": "the-problem-with-incomplete-data",
+            "slug": "the-problem-with-incomplete-data",
             "title": "THE PROBLEM WITH INCOMPLETE DATA",
             "subtitle": "The Data that Misinforms and only Scratches the Surface",
             "author": {
@@ -39,7 +41,8 @@
             }
           },
           {
-            "id": "xiangying-fang-title-tba",
+            "id": "femininity-in-service-ai",
+            "slug": "femininity-in-service-ai",
             "title": "FEMININITY IN SERVICE AI",
             "subtitle": "The Digital Reinscription of Gendered Emotional Labor",
             "author": {
@@ -67,7 +70,8 @@
             }
           },
           {
-            "id": "amy-lewis-title-tba",
+            "id": "a-deep-dive-into-deepfakes",
+            "slug": "a-deep-dive-into-deepfakes",
             "title": "A DEEP DIVE INTO DEEPFAKES",
             "author": {
               "name": "AMY LEWIS",

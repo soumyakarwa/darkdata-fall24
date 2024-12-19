@@ -8,6 +8,8 @@
 </script>
 
 <header>
+	<!-- svelte-ignore a11y_click_events_have_key_events -->
+	<!-- svelte-ignore a11y_no_static_element_interactions -->
 	<div id="banner" 
 		class:active={activeNavId === ''}
 		on:click={() => handleNavClick('')}> 
@@ -28,6 +30,8 @@
 		</div>
 	</div>
 	<nav id="navigation" class="grain-filter">
+		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<ul>
 			<li 
 				id="nav-digital-misogyny" 
@@ -36,7 +40,6 @@
 				on:click={() => handleNavClick('nav-digital-misogyny')}>
 				<a href="/directions/digital-misogyny">DIGITAL MISOGYNY</a>
 			</li>
-			<!-- svelte-ignore a11y_click_events_have_key_events -->
 			<li 
 				id="nav-surveillance"
 				class:active={activeNavId === 'nav-surveillance'}

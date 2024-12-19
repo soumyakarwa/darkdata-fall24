@@ -1,5 +1,6 @@
 <script>
     export let articleData;
+    console.log(articleData);
 </script>
 
 <section class="article-content">

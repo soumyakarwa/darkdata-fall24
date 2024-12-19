@@ -79,7 +79,7 @@
 
 	footer {
 		background-color: var(--black); 
-		height: 20vh; 
+		height: 100%; 
 		flex: 0.5; 
 		display: flex;
 		flex-direction: column;
@@ -88,6 +88,7 @@
 		box-sizing: border-box;
 		color: var(--white); 
 		font-family: var(--font-header); 
+		padding: var(--gap); 
 		/* min-height: 10vh;  */
 		/* background-color: red;  */
 	}
@@ -97,7 +98,7 @@
 		font-size: var(--nav); 
 		display: flex; 
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: flex-start;	
 	}
 
@@ -111,5 +112,14 @@
 	.name {
 		font-family: var(--font-body); 
 		font-size: var(--body); 
+	}
+
+	@media screen and (max-width: 480px) {
+		.footer-content {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: var(--gap); 
+		}
 	}
 </style>
