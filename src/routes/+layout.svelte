@@ -3,16 +3,16 @@
 	import '../app.css';
 	import P5Sketch from './P5Sketch.svelte';
 
-	let { children } = $props();
+	export let data; 
 </script>
 
 <!-- <section id="darkdata" class="grain-filter"> -->
 	<div id="app-div" class="app">
 		<P5Sketch />
-		<Header />
+		<Header data={data}/>
 
 		<main>
-			{@render children()}
+			<slot />
 		</main>
 
 		<svg width="0" height="0">

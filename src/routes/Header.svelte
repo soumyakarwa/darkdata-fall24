@@ -1,6 +1,8 @@
 <script>
 	import { page } from '$app/stores';
+	export let data; 
 	let activeNavId = ''; // Variable to store the active item's id
+	const categories = Object.values(data.articles.zine.categories);
 
 	function handleNavClick(id) {
 		activeNavId = id;
@@ -30,30 +32,18 @@
 		</div>
 	</div>
 	<nav id="navigation" class="grain-filter">
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
+		<!-- svelte-ignore a11y_click_events_have_key_events
+		svelte-ignore a11y_no_noninteractive_element_interactions -->
 		<ul>
-			<li 
-				id="nav-digital-misogyny" 
-				aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}
-				class:active={activeNavId === 'nav-digital-misogyny'}
-				on:click={() => handleNavClick('nav-digital-misogyny')}>
-				<a href="/directions/digital-misogyny/the-problem-with-incomplete-data">DIGITAL MISOGYNY</a>
-			</li>
-			<li 
-				id="nav-surveillance"
-				class:active={activeNavId === 'nav-surveillance'}
-				aria-current={$page.url.pathname.includes('/directions/surveillance-and-the-media') ? 'page' : undefined}
-				on:click={() => handleNavClick('nav-surveillance')}>
-				<a href="/directions/surveillance-and-the-media">SURVEILLANCE & THE MEDIA</a>
-			</li>
-			<li 
-				id="nav-hidden-narratives"
-				class:active={activeNavId === 'nav-hidden-narratives'}
-				aria-current={$page.url.pathname.includes('/directions/hidden-narratives') ? 'page' : undefined}
-				on:click={() => handleNavClick('nav-hidden-narratives')}>
-				<a href="/directions/hidden-narratives">HIDDEN NARRATIVES</a>
-			</li>
+			{#each categories as category}
+				<li 
+					id="nav-{category.id}"
+					aria-current={$page.url.pathname.includes('/directions') ? 'page' : undefined}
+					class:active={activeNavId === `nav-${category.id}`}
+					on:click={() => handleNavClick(`nav-${category.id}`)}>
+					<a href="/directions/{category.id}/{category.articles[0].id}">{category["section-title"]}</a>
+				</li>
+			{/each}
 		</ul>
 	  </nav>
 	  

@@ -7,7 +7,7 @@
       "digital-misogyny": {
         "id": "digital-misogyny",
         "slug": "digital-misogyny",
-        "section-title": "Digital Misogyny",
+        "section-title": "DIGITAL MISOGYNY",
         "articles": [
           {
             "id": "the-problem-with-incomplete-data",
@@ -105,10 +105,11 @@
       },
       "surveillance-and-the-media": {
         "id": "surveillance-and-the-media",
-        "section-title": "Surveillance & The Media",
+        "section-title": "SURVEILLANCE & THE MEDIA",
         "articles": [
           {
-            "id": "viviane-ma-title-tba",
+            "id": "the-culture-gap-on-social-media",
+            "slug": "the-culture-gap-on-social-media",
             "category": "Surveillance & The Media",
             "title": "THE CULTURE GAP ON SOCIAL MEDIA",
             "author": {
@@ -128,7 +129,8 @@
             }
           },
           {
-            "id": "nathan-williams-title-tba",
+            "id": "self-exposure",
+            "slug": "self-exposure",
             "category": "Surveillance & The Media",
             "title": "SELF-EXPOSURE",
             "author": {
@@ -159,7 +161,8 @@
             }
           },
           {
-            "id": "fatima-ashraf-title-tba",
+            "id": "from-god-to-algorithms",
+            "slug": "from-god-to-algorithms",
             "category": "Surveillance & The Media",
             "title": "FROM GOD TO ALGORITHMS",
             "author": {
@@ -182,10 +185,11 @@
       },
       "hidden-narratives": {
         "id": "hidden-narratives",
-        "section-title": "Hidden Narratives",
+        "section-title": "HIDDEN NARRATIVES",
         "articles": [
           {
-            "id": "nick-lyons-title-tba",
+            "id": "(un)protected-health-information",
+            "slug": "(un)protected-health-information",
             "category": "Hidden Narratives",
             "title": "(UN)PROTECTED HEALTH INFORMATION",
             "author": {
@@ -212,7 +216,8 @@
             }
           },
           {
-            "id": "katya-danziger-title-tba",
+            "id": "salvaging-our-shared-reality",
+            "slug": "salvaging-our-shared-reality",
             "category": "Hidden Narratives",
             "title": "SALVAGING OUR SHARED REALITY",
             "sub-title": "An Op-Ed About What’s at Stake & Where We’re Headed",
@@ -254,7 +259,8 @@
             }
           },
           {
-            "id": "anon-title-tba",
+            "id": "my-introduction-to-the-minecraft-to-cybercrime-pipeline",
+            "slug": "my-introduction-to-the-minecraft-to-cybercrime-pipeline",
             "category": "Hidden Narratives",
             "title": "MY INTRODUCTION TO THE MINECRAFT TO CYBERCRIME PIPELINE",
             "author": {
@@ -274,7 +280,8 @@
             }
           },
           {
-            "id": "di-murray-title-tba",
+            "id": "the-phillipines-on-the-news-frontlines-of-the-cold-war",
+            "slug": "the-phillipines-on-the-news-frontlines-of-the-cold-war",
             "category": "Hidden Narratives",
             "title": "THE PHILIPPINES ON THE NEW FRONTLINES OF THE COLD WAR",
             "author": {

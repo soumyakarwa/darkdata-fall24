@@ -1,27 +1,31 @@
-// [id]/+page.js
-import articles from "$lib/content/articles.json";
+export async function load({ params, parent }) {
+  // Access parent data from the layout
+  const parentData = await parent();
+  const { articles } = parentData;
 
-export async function load({ params }) {
+  if (!articles) {
+    throw new Error("Articles not found in parent data");
+  }
+
+  // Extract category and article IDs from the URL
   const { category, id } = params;
-  console.log(id);
 
-  // Find the relevant category and article
-  const categoryData = articles.zine.categories[category]; // Assume `articles.json` is structured by category
-  console.log(categoryData);
+  // Find the relevant category
+  const categoryData = articles.zine.categories[category];
   if (!categoryData) {
     throw error(404, "Category not found");
   }
 
-  console.log(categoryData.articles);
+  // Find the relevant article within the category
   const articleData = categoryData.articles.find(
     (article) => article.slug === id
   );
   if (!articleData) {
     throw error(404, "Article not found");
   }
-  console.log(articleData);
 
   return {
+    categoryData,
     articleData,
   };
 }
